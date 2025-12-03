@@ -2,7 +2,9 @@ function App() {
 
   return (
     <>
-      <div>Welcome</div>
+      <div className="text-xl">
+        Hello, AI Chatbot!
+      </div>
     </>
   )
 }
