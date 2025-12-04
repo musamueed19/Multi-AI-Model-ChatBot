@@ -8,7 +8,7 @@ interface AppLayoutProps {
 const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <div className="md:max-w-5xl mx-auto min-h-screen flex flex-col">
-      <Header />
+      <Header className="" />
       <main className="flex-1 flex flex-col items-center justify-center">
         {children || <Outlet />}
       </main>
