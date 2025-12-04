@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  font-family: -ui-sans-serif, --apple-system, Avenir, Helvetica, Arial, sans-serif;
+  font-family: -ui-sans-serif, --apple-system, Avenir, Helvetica, Arial,
+    sans-serif;
   /* line-height: 1.5; */
   /* font-weight: 400; */
 
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
+  color-scheme: light dark;
+  color: #fff;
+  background-color: #212121;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +20,9 @@
   box-sizing: border-box;
 }
 
-body {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   width: 100%;

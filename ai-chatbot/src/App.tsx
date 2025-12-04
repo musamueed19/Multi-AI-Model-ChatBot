@@ -1,12 +1,14 @@
-function App() {
+import AppLayout from "./AppLayout";
+import Home from "./pages/Home";
 
+function App() {
   return (
     <>
-      <div className="text-xl">
-        Hello, AI Chatbot!
-      </div>
+      <AppLayout>
+        <Home />
+      </AppLayout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
