@@ -1,12 +1,30 @@
 import { ArrowUp02Icon, Mic02Icon, Add01Icon } from "hugeicons-react";
 import Chat from "../components/Chat";
+import { useState } from "react";
+import type { ChatMessage } from "../components/types";
 
 const Home = () => {
+
+  const [messages, setMessages] = useState<ChatMessage[]>([
+    {
+      role: "user",
+      content: "Can you tell me a joke?"
+    },
+    {
+      role: "assistant",
+      content: "Sure! Here's one:"
+    },
+    {
+      role: "assistant",
+      content: "Why don't scientists trust atoms? Because they make up everything!" 
+    },
+  ])
+
   return (
     <>
-      {false ? (
-        <div className="h-full w-full flex flex-col items-end gap-y-6 max-w-4xl mx-auto px-2 md:px-4">
-          <Chat />
+      {true ? (
+        <div className="h-full w-full flex flex-col max-w-4xl mx-auto px-2 md:px-4">
+          <Chat messages={messages} />
         </div>
       ) : (
         <div className="h-full w-full flex flex-col items-center justify-center gap-y-6 max-w-3xl mx-auto px-2 md:px-4">
