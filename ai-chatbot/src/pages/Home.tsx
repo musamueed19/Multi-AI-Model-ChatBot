@@ -5,7 +5,7 @@ import type { ChatMessage } from "../components/types";
 
 const Home = () => {
 
-  const [messages, setMessages] = useState<ChatMessage[]>([
+  const [messages] = useState<ChatMessage[]>([
     {
       role: "user",
       content: "Can you tell me a joke?"
