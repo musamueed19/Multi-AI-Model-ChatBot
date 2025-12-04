@@ -1,6 +1,10 @@
 import { ArrowDown01Icon, MessageDelay02Icon } from "hugeicons-react";
 
-const Header = ({className}) => {
+interface HeaderProps {
+  className?: string;
+}
+
+const Header = ({ className }: HeaderProps) => {
   return (
     <header className={`px-2 md:px-4 py-3 flex items-center justify-between ${className}`}>
       <div className="flex items-center gap-1 py-1.5 px-3 rounded-lg hover:bg-gray-600/40 transition-all duration-100 cursor-pointer">
